@@ -15,64 +15,97 @@
 </head>
 <body>
 <h1>Datenschutzerklärung – WingLog</h1>
-<p class="updated">Stand: Juli 2026</p>
+<p class="updated">Stand: Oktober 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>Julius Eisfelder<br>
-E-Mail: <a href="mailto:julius-winglog@gmail.com">julius-winglog@gmail.com</a></p>
+E-Mail: <a href="mailto:julius@winglogapp.com">julius@winglogapp.com</a></p>
 
 <h2>2. Überblick</h2>
-<p>WingLog ist ein persönliches Flug-Logbuch. Deine geloggten Flüge werden primär
-<strong>lokal auf deinem Gerät</strong> gespeichert. Nur für die sozialen Funktionen
-(Freunde, Rangliste, Feed, Chat) werden bestimmte Daten in der Cloud gespeichert.</p>
+<p>WingLog ist ein persönliches Flug-Logbuch. Deine geloggten Flüge werden <strong>auf deinem Gerät</strong>
+gespeichert. Bist du angemeldet, legt die App zusätzlich eine <strong>Sicherungskopie</strong> deines
+Flugbuchs in der Cloud ab, damit du es bei einem Gerätewechsel zurückholen kannst. Für die sozialen
+Funktionen (Freunde, Rangliste, Feed, Chat) werden bestimmte Daten in der Cloud gespeichert.</p>
 
 <h2>3. Welche Daten verarbeitet werden</h2>
-<h3>3.1 Lokal auf deinem Gerät</h3>
+<h3>3.1 Auf deinem Gerät</h3>
 <ul>
-  <li>Deine geloggten Flüge (Route, Datum, Airline, Flugzeugtyp, Sitzplatz, Notizen)</li>
-  <li>Spotter-Sichtungen und lokal gespeicherte Fotos</li>
+  <li>Deine geloggten Flüge (Route, Datum, Airline, Flugzeugtyp, Kennzeichen, Sitzklasse, Bewertung, Notizen)</li>
+  <li>Spotter-Sichtungen und Fotos</li>
+  <li>Reiseliste (Wunschländer mit Notizen), Lounges, manuell gesetzte Länder und Flughäfen</li>
   <li>App-Einstellungen</li>
 </ul>
-<p>Diese Daten verlassen dein Gerät nicht, sofern du nicht die Freunde-Funktionen nutzt.</p>
+<p>Fotos bleiben auf deinem Gerät, außer du teilst einen Flug oder Spot im Feed.</p>
 
-<h3>3.2 In der Cloud (Firebase / Google)</h3>
+<h3>3.2 In der Cloud (Google Firebase)</h3>
 <p>Wenn du ein Konto erstellst, werden folgende Daten auf Servern von Google Firebase gespeichert:</p>
 <ul>
   <li><strong>Kontodaten:</strong> Anzeigename, E-Mail-Adresse (bei Anmeldung mit Google, Apple oder E-Mail), Freundes-Code</li>
   <li><strong>Profilbild</strong> (falls du eines hochlädst)</li>
-  <li><strong>Statistiken:</strong> Anzahl deiner Flüge, besuchten Flughäfen, Airlines und Flugzeugtypen (für die Rangliste deiner Freunde)</li>
-  <li><strong>Feed-Beiträge:</strong> Flüge, die du mit Freunden teilst, inkl. Reaktionen und Kommentaren</li>
-  <li><strong>Folge-Beziehungen:</strong> wem du folgst</li>
+  <li><strong>Sicherungskopie:</strong> dein Flugbuch samt Reiseliste, Lounges und manuell gesetzten Ländern und Flughäfen</li>
+  <li><strong>Statistiken:</strong> Anzahl deiner Flüge, Flughäfen, Airlines, Flugzeugtypen und Kilometer sowie die Länder deiner Karte (für Rangliste und Profil)</li>
+  <li><strong>Feed-Beiträge:</strong> Flüge und Spots, die du teilst, inklusive Foto, Text, Sitzklasse und Bewertung, sowie Reaktionen und Kommentare</li>
+  <li><strong>Folge-Beziehungen:</strong> wem du folgst und wer dir folgt, samt der Anzahl</li>
   <li><strong>Chat-Nachrichten</strong> zwischen dir und anderen Nutzern</li>
+  <li><strong>Benachrichtigungen:</strong> eine Gerätekennung für Push-Mitteilungen (FCM-Token) und dein Benachrichtigungs-Postfach</li>
+  <li><strong>Kabinenbewertungen:</strong> Bewertest du die Kabine eines Fluges, wird zusätzlich eine Kopie ohne Namen gespeichert (Airline, Klasse, Flugzeugtyp, Jahr, Noten), um später Durchschnittswerte über alle Nutzer bilden zu können. Sie ist über deine Nutzer-ID mit deinem Konto verknüpft, damit eine geänderte Bewertung die alte ersetzt, und wird mit deinem Konto gelöscht.</li>
 </ul>
+<p>Datenbank und Server-Funktionen laufen in Rechenzentren in der EU.</p>
 
-<h2>4. Auftragsverarbeiter</h2>
+<h2>4. Was andere Nutzer sehen</h2>
+<p>Andere WingLog-Nutzer sehen deinen Namen, dein Profilbild und deine Statistiken. Öffnen sie dein Profil,
+sehen sie außerdem deine geteilten Beiträge sowie deine Follower und wem du folgst. Beides kannst du in den
+Einstellungen unter „Feed &amp; Social" ausschalten. Deine Karten sehen nur Personen, denen du folgst und die
+dir folgen.</p>
+
+<h2>5. Externe Dienste</h2>
+<p>Damit die App Flüge, Flughäfen und Flugzeuge ergänzen kann, übermittelt sie einzelne Suchbegriffe an
+externe Dienste. Dabei werden <strong>keine Namen, E-Mail-Adressen oder Konto-Kennungen</strong> übertragen.</p>
 <ul>
-  <li><strong>Google Firebase</strong> (Google Ireland Ltd.): Authentifizierung, Datenbank, Dateispeicher.
-      Weitere Informationen: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-  <li><strong>AeroDataBox</strong> (über RapidAPI): Bei der Flugsuche wird die eingegebene Flugnummer bzw. der
-      Flughafen-Code an den Dienst übermittelt, um Flugdaten abzurufen. Dabei werden keine persönlichen
-      Daten von dir übertragen.</li>
+  <li><strong>Google Firebase</strong> (Google Ireland Ltd.): Anmeldung, Datenbank, Dateispeicher, Server-Funktionen
+      und Push-Mitteilungen. Weitere Informationen:
+      <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+  <li><strong>AeroDataBox</strong> (über RapidAPI): erhält die eingegebene Flugnummer mit Datum, ein
+      Flugzeugkennzeichen oder den IATA-Code einer Airline bzw. eines Flughafens, um Flugdaten, Flotten und
+      Strecken abzurufen.</li>
+  <li><strong>AirLabs</strong>: erhält den IATA-Code einer Airline, um deren Flotte abzurufen (nur wenn
+      AeroDataBox nicht antwortet).</li>
+  <li><strong>Google</strong> (gstatic.com): liefert die Airline-Logos. Dabei wird deine IP-Adresse übertragen.</li>
+  <li><strong>Wikipedia</strong> und <strong>Flightradar24</strong>: werden nur geöffnet, wenn du in der App
+      selbst einen entsprechenden Link antippst.</li>
 </ul>
+<p>Die Karten zeichnet die App aus Daten, die in ihr enthalten sind — beim Anzeigen einer Karte werden keine
+Daten an Dritte übertragen.</p>
+<p><strong>Bordkarten einlesen:</strong> Liest du eine Bordkarte per Kamera, Foto oder Wallet-Datei ein, wird
+der Barcode <strong>auf deinem Gerät</strong> ausgewertet (Apple Vision auf iOS, Google ML Kit auf Android).
+Das Bild verlässt dein Gerät dabei nicht. Google ML Kit kann anonyme Nutzungsstatistiken an Google senden.</p>
 
-<h2>5. Keine Werbung, kein Tracking</h2>
-<p>WingLog zeigt keine Werbung und verwendet keine Analyse- oder Tracking-Dienste.</p>
+<h2>6. Keine Werbung</h2>
+<p>WingLog zeigt keine Werbung, verkauft keine Daten und bindet keine eigenen Analyse- oder Tracking-Dienste ein.</p>
 
-<h2>6. Speicherdauer</h2>
-<p>Cloud-Daten bleiben gespeichert, solange dein Konto besteht. Lokale Daten bleiben auf deinem
-Gerät, bis du die App löschst oder die Daten in der App entfernst.</p>
+<h2>7. Speicherdauer</h2>
+<p>Cloud-Daten bleiben gespeichert, solange dein Konto besteht. Daten auf deinem Gerät bleiben, bis du sie in
+der App entfernst oder die App löschst.</p>
 
-<h2>7. Konto und Daten löschen</h2>
-<p>Du kannst die Löschung deines Kontos und aller zugehörigen Cloud-Daten jederzeit anfordern:
-<a href="delete-account.html">Anleitung zur Kontolöschung</a>. Schreibe dazu eine E-Mail an
-<a href="mailto:julius-winglog@gmail.com">julius-winglog@gmail.com</a> mit dem Betreff „Konto löschen".</p>
+<h2>8. Konto und Daten löschen</h2>
+<p>Unter Einstellungen → „Account löschen" entfernst du dein Konto, dein Profil und alle Daten auf deinem
+Gerät. Geteilte Beiträge, Chat-Verläufe, Folge-Beziehungen, die Sicherungskopie, Kabinenbewertungen und
+hochgeladene Fotos werden dabei derzeit noch nicht automatisch entfernt — schreibe dafür eine E-Mail an
+<a href="mailto:julius@winglogapp.com">julius@winglogapp.com</a> mit dem Betreff „Konto löschen". Wir löschen
+dann alle zugehörigen Cloud-Daten innerhalb von 30 Tagen. Siehe auch die
+<a href="delete-account.html">Anleitung zur Kontolöschung</a>.</p>
 
-<h2>8. Deine Rechte (DSGVO)</h2>
+<h2>9. Minderjährige</h2>
+<p>WingLog richtet sich nicht an Kinder unter 16 Jahren.</p>
+
+<h2>10. Deine Rechte (DSGVO)</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
 Datenübertragbarkeit und Widerspruch. Wende dich dazu an die oben genannte E-Mail-Adresse.
-Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, in Deutschland
+zum Beispiel beim Bundesbeauftragten für den Datenschutz und die Informationsfreiheit
+(<a href="https://www.bfdi.bund.de">bfdi.bund.de</a>).</p>
 
-<h2>9. Änderungen</h2>
+<h2>11. Änderungen</h2>
 <p>Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden. Die aktuelle Version ist
 immer unter dieser Adresse abrufbar.</p>
 </body>
